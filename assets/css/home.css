@@ -275,7 +275,7 @@
 }
 .tour-item__info-more:hover {
   filter: brightness(1.1);
-} /* End tour */ 
+} /* End tour */
 
 /* Start discover */
 .discover {
@@ -312,4 +312,4 @@
 .discover-item__btn:hover {
   transform: scale(1.1);
   filter: brightness(0.91);
-} /* End discover */ 
+} /* End discover */
