@@ -6,6 +6,7 @@
   --text-light-color: #a9a9a9;
   --text-dark-color: #555;
 
+  --orange: #ffa500;
   --red-color: #f76570;
   --orange-dark-color: #e27557;
   --orange-color: #f3a46b;
@@ -13,7 +14,6 @@
   --green-color: #1bbc9b;
   --blue-color: #14b9d5;
   --purple-color: #ba71da;
-  
 }
 * {
   box-sizing: inherit;

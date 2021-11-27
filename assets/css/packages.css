@@ -28,9 +28,7 @@
 }
 .filter-wrap {
   position: relative;
-  padding: 35px;
   margin: 50px 0;
-  background-color: var(--white-color);
 }
 .filter-item {
   display: flex;
@@ -40,6 +38,7 @@
 .filter-item__label {
   font-size: 1.5rem;
   font-weight: 500;
+  color: var(--white-color);
 }
 .filter-select-wrap {
   display: flex;
