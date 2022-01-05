@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Love Travel</title>
+    <link rel="icon" href="./assets/images/icon.jpg" sizes="32x32">
+    <!-- Reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- My style -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/destination.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
+    <link rel="stylesheet" href="./assets/css/shop.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+    <div class="app">
+        <!-- Start header with search -->
+        <section class="header-wrap"
+            style="background-image: linear-gradient( #434a544d, #434a544d), url(./assets/images/parallax-13.jpg)">
+            <!-- Start header -->
+            <header class="header">
+                <a href="./index.html" class="header__logo">
+                    <img src="./assets/images/logo.png" alt="" class="header__logo-img" />
+                </a>
+                <ul class="navbar-list hide-on-mobile-tablet">
+                    <li class="navbar-list__item"><a href="./index.html" class="navbar-list__link">HOME</a></li>
+                    <li class="navbar-list__item">
+                        <a href="./packages.html" class="navbar-list__link">PACKAGES</a>
+                        <!-- Subnav -->
+                        <ul class="navbar-list__subnav">
+                            <li class="navbar-list__subnav-item item-tag--active-red">
+                                <a href="" class="navbar-list__subnav-link">
+                                    Search 1
+                                    <span class="item-tag"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End subnav -->
+                    </li>
+                    <li class="navbar-list__item">
+                        <a href="./about.html" class="navbar-list__link">ABOUT US</a>
+                        <!-- Subnav -->
+                        <ul class="navbar-list__subnav">
+                            <li class="navbar-list__subnav-item item-tag--active-green">
+                                <a href="" class="navbar-list__subnav-link">About Us<span class="item-tag"></span></a>
+                            </li>
+                        </ul>
+                        <!-- End subnav -->
+                    </li>
+                    <li class="navbar-list__item">
+                        <a href="./news.html" class="navbar-list__link">NEWS</a>
+                    </li>
+                    <li class="navbar-list__item">
+                        <a href="./contact.html" class="navbar-list__link">CONTACT</a>
+                    </li>
+                </ul>
+                <!-- Book btn -->
+                <div class="btn btn--bg-purple header__btn hide-on-mobile-tablet"><a href="book.html">Book now</a></div>
+                <div class="btn_login">
+                    <!-- Login Modal -->
+                    <div class="btn btn--bg-orange header__btn" id="login-btn">
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="login-form-container">
+                        <i class="fas fa-times" id="form-close"></i>
+                        <form action="">
+                            <h3>login</h3>
+                            <input type="email" class="box" placeholder="Enter your email">
+                            <input type="password" class="box" placeholder="Enter your password">
+                            <input type="submit" class="btn-lg" value="Login Now">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">remember</label>
+                            <p>Forget password? <a href="#">Click here</a></p>
+                            <p>Don't have and account? <a href="#" id="register-btn-change">Register</a></p>
+                        </form>
+                    </div>
+                    <!-- Register Modal -->
+                    <div class="btn btn--bg-orange header__btn" id="register-btn">
+                        <a href="#">Register</a>
+                    </div>
+                    <div class="register-form-container">
+                        <i class="fas fa-times" id="form-close-res"></i>
+                        <form action="">
+                            <h3>register</h3>
+                            <input type="email" class="box" placeholder="Enter your email">
+                            <input type="password" class="box" placeholder="Enter your password">
+                            <input type="submit" class="btn-lg" value="Register Now">
+                        </form>
+                    </div>
+                </div>
+                <!-- Menu icon -->
+                <label for="switch-aside-checkbox" class="header__menu-btn">
+                    <i class="header__menu-icon fas fa-bars"></i>
+                </label>
+                <input hidden type="checkbox" name="" id="switch-aside-checkbox" />
+                <!-- Aside -->
+                <label for="switch-aside-checkbox" class="aside-overlay"></label>
+                <aside class="aside">
+                    <!-- Close aside button -->
+                    <label for="switch-aside-checkbox" class="aside__close-btn"><img src="./assets/images/error.png"
+                            alt="" class="aside__close-img" /></label>
+                    <!-- =============== JUST SHOW ON PC =============== -->
+                    <!-- Aside heading -->
+                    <h5 class="aside__heading section__heading hide-on-mobile-tablet">BEST</h5>
+                    <h3 class="aside__title section__title hide-on-mobile-tablet">
+                        <u class="underline underline--yellow">Destination</u>
+                    </h3>
+                    <!-- Start aside content -->
+                    <div class="aside__content-wrap hide-on-mobile-tablet">
+                        <div class="aside__item">
+                            <img src="./assets/images/HN.jpeg" alt="" class="aside__item-img" />
+                            <div class="aside__item-info">
+                                <a href="" class="aside__item-heading">Ha Noi</a>
+                                <a href="" class="aside__item-text">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Vietnam
+                                </a>
+                                <a href="" class="btn aside__item-btn aside__item-btn--yellow">From 700 $</a>
+                            </div>
+                        </div>
+                        <div class="aside__item">
+                            <img src="./assets/images/HCM.jpeg" alt="" class="aside__item-img" />
+                            <div class="aside__item-info">
+                                <a href="" class="aside__item-heading">Ho Chi Minh</a>
+                                <a href="" class="aside__item-text">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Vietnam
+                                </a>
+                                <a href="" class="btn aside__item-btn aside__item-btn--red">From 500 $</a>
+                            </div>
+                        </div>
+                        <div class="aside__item">
+                            <img src="./assets/images/DN.jpeg" alt="" class="aside__item-img" />
+                            <div class="aside__item-info">
+                                <a href="" class="aside__item-heading">Da Nang</a>
+                                <a href="" class="aside__item-text">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Vietnam
+                                </a>
+                                <a href="" class="btn aside__item-btn aside__item-btn--purple">From 400 $</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End aside content -->
+                    <!-- =============== JUST SHOW ON MOBILE AND TABLET =============== -->
+                    <ul class="aside__navbar hide-on-pc">
+                        <li class="aside__navbar-item">
+                            <a href="./index.html" class="aside__navbar-link">
+                                <i class="aside__navbar-icon fas fa-chevron-right"></i>
+                                HOME</a>
+                        </li>
+                        <li class="aside__navbar-item">
+                            <a href="./packages.html" class="aside__navbar-link">PACKAGES</a>
+                            <ul class="aside__subnav">
+                                <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SEARCH 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="aside__navbar-item">
+                            <a href="./about.html" class="aside__navbar-link">ABOUT US</a>
+                            <ul class="aside__subnav">
+                                <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US</a></li>
+                            </ul>
+                        </li>
+                        <li class="aside__navbar-item">
+                            <a href="./news.html" class="aside__navbar-link">NEWS</a>
+                        </li>
+                        <li class="aside__navbar-item">
+                            <a href="./contact.html" class="aside__navbar-link">CONTACT</a>
+                        </li>
+                        <li class="aside__navbar-item">
+                            <a href="./book.html" class="aside__navbar-link">BOOK NOW</a>
+                        </li>
+                    </ul>
+                </aside>
+            </header>
+            <!-- End header -->
+            <h1 class="header-title">Payment</h1>
+        </section>
+        <!-- End header with search -->
+
+        <section class="book_tk" id="book_tk">
+
+            <h1 class="heading_book">
+                <span>p</span>
+                <span>a</span>
+                <span>y</span>
+                <span>m</span>
+                <span>e</span>
+                <span>n</span>
+                <span>t</span>
+            </h1>
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="./assets/images/pay.jpg" alt="">
+                </div>
+
+                <form action="">
+                    <div class="inputBox">
+                        <h3>Start</h3>
+                        <input type="text" placeholder="place name" focus>
+                    </div>
+                    <div class="inputBox">
+                        <h3>End</h3>
+                        <input type="text" placeholder="place name">
+                    </div>
+                    <div class="inputBox">
+                        <h3>How many</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Arrivals</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Leaving</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>Fare: 500$</h3>
+                    </div>
+                    <input type="submit" class="btn_book" value="Payment">
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- Start footer -->
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row align-items-center">
+                    <div class="col l-4 l-o-2 m-12 c-12">
+                        <div class="footer__with-heading">
+                            <h3 class="section__heading footer__heading">KEEP IN TOUCH</h3>
+                            <h5 class="section__title footer__title">Travel with Us</h5>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="footer__with-input">
+                            <input type="text" name="" id="" class="footer__input" />
+                            <div class="btn btn--bg-blue footer__btn">SEND</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="row">
+                        <!-- Logo and text -->
+                        <div class="col l-6 m-12 c-12">
+                            <div class="footer-info">
+                                <a href="" class="footer-info__logo-link"><img src="./assets/images/footer_logo.png"
+                                        alt="" class="footer-info__logo" /></a>
+                                <p class="footer-info__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh
+                                    <a href="">condimentum</a> venenatis eu ac magnasin. Quisque interdum est mauris,
+                                    eget ullamcorper.
+                                </p>
+                                <div class="footer-info__social-wrap">
+                                    <a href="" class="footer-info__link">
+                                        <i class="footer-info__icon fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="footer-info__link">
+                                        <i class="footer-info__icon fab fa-youtube"></i>
+                                    </a>
+                                    <a href="" class="footer-info__link">
+                                        <i class="footer-info__icon fab fab fa-facebook-square"></i>
+                                    </a>
+                                    <a href="" class="footer-info__link">
+                                        <i class="footer-info__icon fab fa-vimeo-v"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- List -->
+                        <div class="col l-2 m-4 c-12">
+                            <div class="footer-list__wrap">
+                                <h4 class="footer-list__heading">OUR AGENCY</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-list__item"><a href="" class="footer-list__link"> Services</a>
+                                    </li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Insurancee</a>
+                                    </li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Agency</a></li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Tourism</a></li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Payment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-4 c-12">
+                            <div class="footer-list__wrap">
+                                <h4 class="footer-list__heading">PARTNERS</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Booking </a></li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">RentalCar</a>
+                                    </li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">HostelWorld</a>
+                                    </li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Trivago</a></li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">TripAdvisor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-4 c-12">
+                            <div class="footer-list__wrap">
+                                <h4 class="footer-list__heading">LAST MINUTE</h4>
+                                <ul class="footer-list">
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">London</a></li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">California</a>
+                                    </li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Indonesia</a>
+                                    </li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Europe</a></li>
+                                    <li class="footer-list__item"><a href="" class="footer-list__link">Oceania</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p class="footer__copyright-item">THE BEST WORDPRESS TRAVEL THEME</p>
+                    <p class="footer__copyright-item">COPYRIGHT NICDARK THEMES 2018</p>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </div>
+</body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</html>

@@ -67,6 +67,38 @@
         </ul>
         <!-- Book btn -->
         <div class="btn btn--bg-purple header__btn hide-on-mobile-tablet"><a href="book.html">Book now</a></div>
+        <div class="btn_login">
+          <!-- Login Modal -->
+          <div class="btn btn--bg-orange header__btn" id="login-btn">
+            <a href="#">Login</a>
+          </div>
+          <div class="login-form-container">
+            <i class="fas fa-times" id="form-close"></i>
+            <form action="">
+              <h3>login</h3>
+              <input type="email" class="box" placeholder="Enter your email">
+              <input type="password" class="box" placeholder="Enter your password">
+              <input type="submit" class="btn-lg" value="Login Now">
+              <input type="checkbox" id="remember">
+              <label for="remember">remember</label>
+              <p>Forget password? <a href="#">Click here</a></p>
+              <p>Don't have and account? <a href="#" id="register-btn-change">Register</a></p>
+            </form>
+          </div>
+          <!-- Register Modal -->
+          <div class="btn btn--bg-orange header__btn" id="register-btn">
+            <a href="#">Register</a>
+          </div>
+          <div class="register-form-container">
+            <i class="fas fa-times" id="form-close-res"></i>
+            <form action="">
+              <h3>register</h3>
+              <input type="email" class="box" placeholder="Enter your email">
+              <input type="password" class="box" placeholder="Enter your password">
+              <input type="submit" class="btn-lg" value="Register Now">
+            </form>
+          </div>
+        </div>
         <!-- Menu icon -->
         <label for="switch-aside-checkbox" class="header__menu-btn">
           <i class="header__menu-icon fas fa-bars"></i>
@@ -82,129 +114,45 @@
           <!-- Aside heading -->
           <h5 class="aside__heading section__heading hide-on-mobile-tablet">BEST</h5>
           <h3 class="aside__title section__title hide-on-mobile-tablet">
-            <u class="underline underline--yellow">PACKAGES</u>
+            <u class="underline underline--yellow">Destination</u>
           </h3>
           <!-- Start aside content -->
           <div class="aside__content-wrap hide-on-mobile-tablet">
             <div class="aside__item">
-              <img src="./assets/images/berlin.jpg" alt="" class="aside__item-img" />
+              <img src="./assets/images/HN.jpeg" alt="" class="aside__item-img" />
               <div class="aside__item-info">
-                <a href="" class="aside__item-heading">Berlin</a>
+                <a href="" class="aside__item-heading">Ha Noi</a>
                 <a href="" class="aside__item-text">
                   <i class="fas fa-map-marker-alt"></i>
-                  Europe
+                  Vietnam
                 </a>
                 <a href="" class="btn aside__item-btn aside__item-btn--yellow">From 700 $</a>
               </div>
             </div>
             <div class="aside__item">
-              <img src="./assets/images/hongkong.jpg" alt="" class="aside__item-img" />
+              <img src="./assets/images/HCM.jpeg" alt="" class="aside__item-img" />
               <div class="aside__item-info">
-                <a href="" class="aside__item-heading">Hong Kong</a>
+                <a href="" class="aside__item-heading">Ho Chi Minh</a>
                 <a href="" class="aside__item-text">
                   <i class="fas fa-map-marker-alt"></i>
-                  Asia
+                  Vietnam
                 </a>
                 <a href="" class="btn aside__item-btn aside__item-btn--red">From 500 $</a>
               </div>
             </div>
             <div class="aside__item">
-              <img src="./assets/images/sanfran.jpg" alt="" class="aside__item-img" />
+              <img src="./assets/images/DN.jpeg" alt="" class="aside__item-img" />
               <div class="aside__item-info">
-                <a href="" class="aside__item-heading">San Francisco</a>
+                <a href="" class="aside__item-heading">Da Nang</a>
                 <a href="" class="aside__item-text">
                   <i class="fas fa-map-marker-alt"></i>
-                  United States
+                  Vietnam
                 </a>
                 <a href="" class="btn aside__item-btn aside__item-btn--purple">From 400 $</a>
               </div>
             </div>
           </div>
           <!-- End aside content -->
-          <!-- Start aside destination -->
-          <div class="aside__destination-wrap hide-on-mobile-tablet">
-            <div class="aside__destination-item destination__item">
-              <div class="destination__item-overlay">
-                <h4 class="overlay__heading">Packages</h4>
-                <ul class="overlay__list">
-                  <li class="overlay__item">
-                    <a href="" class="overlay__link">Berline</a>
-                  </li>
-                  <li class="overlay__item">
-                    <a href="" class="overlay__link">Amsterdam</a>
-                  </li>
-                  <li class="overlay__item">
-                    <a href="" class="overlay__link">Tuscany</a>
-                  </li>
-                  <a href="" class="overlay__btn btn">View destination</a>
-                </ul>
-              </div>
-              <div class="destination__item-img" style="background-image: url(./assets/images/destination-9.jpg)"></div>
-              <img src="./assets/images/arch.png" alt="" class="destination__item-icon" />
-              <div class="destination__info">
-                <h4 class="destination__info-heading">Europe</h4>
-                <p class="destination__info-text">3 packages</p>
-              </div>
-            </div>
-            <div class="aside__destination-item destination__item">
-              <div class="destination__item-overlay">
-                <h4 class="overlay__heading">Packages</h4>
-                <ul class="overlay__list">
-                  <li class="overlay__item">
-                    <a href="" class="overlay__link">Phuket</a>
-                  </li>
-                  <a href="" class="overlay__btn btn">View destination</a>
-                </ul>
-              </div>
-              <div class="destination__item-img" style="background-image: url(./assets/images/destination-5.jpg)"></div>
-              <img src="./assets/images/buddha.png" alt="" class="destination__item-icon" />
-              <div class="destination__info">
-                <h4 class="destination__info-heading">Thailandia</h4>
-                <p class="destination__info-text">1 packages</p>
-              </div>
-            </div>
-          </div>
-          <!-- Aside heading -->
-          <h5 class="aside__heading section__heading hide-on-mobile-tablet">LAST</h5>
-          <h3 class="aside__title section__title hide-on-mobile-tablet">
-            <u class="underline underline--orange">MINUTES</u>
-          </h3>
-          <!-- Start aside content -->
-          <div class="aside__content-wrap hide-on-mobile-tablet">
-            <div class="aside__item">
-              <img src="./assets/images/package-5-150x150.jpg" alt="" class="aside__item-img" />
-              <div class="aside__item-info">
-                <a href="" class="aside__item-heading">Tuscany</a>
-                <a href="" class="aside__item-text">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Italy
-                </a>
-                <a href="" class="btn aside__item-btn aside__item-btn--yellow">From 730 $</a>
-              </div>
-            </div>
-            <div class="aside__item">
-              <img src="./assets/images/package-4-150x150.jpg" alt="" class="aside__item-img" />
-              <div class="aside__item-info">
-                <a href="" class="aside__item-heading">Amsterdam</a>
-                <a href="" class="aside__item-text">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Netherlands
-                </a>
-                <a href="" class="btn aside__item-btn aside__item-btn--red">From 1500 $</a>
-              </div>
-            </div>
-            <div class="aside__item">
-              <img src="./assets/images/package-3-150x150.jpg" alt="" class="aside__item-img" />
-              <div class="aside__item-info">
-                <a href="" class="aside__item-heading">Phuket</a>
-                <a href="" class="aside__item-text">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Thailandia
-                </a>
-                <a href="" class="btn aside__item-btn aside__item-btn--purple">From 1200 $</a>
-              </div>
-            </div>
-          </div>
           <!-- =============== JUST SHOW ON MOBILE AND TABLET =============== -->
           <ul class="aside__navbar hide-on-pc">
             <li class="aside__navbar-item">
@@ -260,9 +208,13 @@
           <img src="./assets/images/book-img.svg" alt="">
         </div>
 
-        <form action="">
+        <form action='pay.html' method='#'>
           <div class="inputBox">
-            <h3>Where to</h3>
+            <h3>Start</h3>
+            <input type="text" placeholder="place name">
+          </div>
+          <div class="inputBox">
+            <h3>End</h3>
             <input type="text" placeholder="place name">
           </div>
           <div class="inputBox">
